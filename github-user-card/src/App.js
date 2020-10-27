@@ -42,7 +42,9 @@ class App extends React.Component {
           <button>Fetch Users</button>
         </form>
         <div className='userContainer'>
-          <p>{this.state.name}</p>
+          <p>{this.state.users.login}</p>
+          <p>{this.state.users.name}</p>
+          <p>Public Repositories: {this.state.users.public_repos}</p>
         </div>
       </div>
     )
